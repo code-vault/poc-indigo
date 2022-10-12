@@ -6,12 +6,12 @@
 <!--        <listener class-name="com.indigo."></listener>-->
 <!--    </listeners>-->
 
-    <parameter name="brand" value="Avis"/> <!-- <Possible values: Avis/Budget/Paylesscar -->
-    <parameter name="domain" value="US"/>    <!-- <Possible values: US/CA/AU/NZ> -->
-    <parameter name="environment" value="qa"/>    <!-- < Possible values : qa/uat1/qa2/www/load balancer ip> -->
+<!--    <parameter name="brand" value="Avis"/> &lt;!&ndash; <Possible values: Avis/Budget/Paylesscar &ndash;&gt;-->
+    <parameter name="domain" value="in"/>    <!-- <Possible values: US/CA/AU/NZ> -->
+    <parameter name="environment" value="prod"/>    <!-- < Possible values : qa/uat1/qa2/www/load balancer ip> -->
     <parameter name="browser" value="chrome"/>
     <!-- <Possible values: chrome/firefox/safari/edge/pixel/iphone/ipad> -->
-    <parameter name="docker" value="true"/>
+    <parameter name="docker" value="false"/>
 
     <test name="avis-smoke-result">
 <!--        <groups>-->

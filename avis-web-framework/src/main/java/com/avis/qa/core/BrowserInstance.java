@@ -68,16 +68,13 @@ public class BrowserInstance {
     protected void initializeChrome() {
         System.out.println("CHROME IS STARTED1");
         WebDriverManager.chromedriver().setup();
-//        System.setProperty("webdriver.chrome.driver", "/Users/devarshi/Downloads/chromedriver");
         System.out.println("CHROME IS STARTE2");
         ChromeOptions chromeOptions = new ChromeOptions();
         System.out.println("CHROME IS STARTED3");
-        chromeOptions.addArguments("--user-data-dir=/Users/devarshi/Library/Application Support/Google/Chrome/Profile 1");
-        chromeOptions.addArguments("--disable-notifications");
         chromeOptions.setAcceptInsecureCerts(true);
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--headless");
-//        chromeOptions.addArguments("--incognito");
+        //chromeOptions.addArguments("--incognito");
         chromeOptions.addArguments("--disable-dev-shm-usage");
         System.out.println("CHROME IS STARTED4");
         webDriver = new ChromeDriver(chromeOptions);
